@@ -30,9 +30,71 @@
             <p>Ready to experience D Best in massage therapy? We're here to serve you. Schedule your appointment today and discover why our clients keep coming back.</p>
         </section>
 
+        <!-- NEW: Booking Form Section -->
+        <section class="booking-form-section">
+            <h2>Book Your Appointment</h2>
+            <p>Fill out the form below to request an appointment. We'll confirm your booking within 24 hours.</p>
+            
+            <form id="booking-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(713) 555-1234" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Select Service *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Choose a service</option>
+                            <option value="Swedish Massage">Swedish Massage</option>
+                            <option value="Hot Stone Therapy">Hot Stone Therapy</option>
+                            <option value="Aromatherapy Massage">Aromatherapy Massage</option>
+                            <option value="Deep Tissue Massage">Deep Tissue Massage</option>
+                            <option value="Custom Wellness Session">Custom Wellness Session</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="appointment-date">Preferred Date *</label>
+                        <input type="date" id="appointment-date" name="appointment-date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="appointment-time">Preferred Time *</label>
+                        <select id="appointment-time" name="appointment-time" required>
+                            <option value="">Select a time</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Additional Notes (Optional)</label>
+                    <textarea id="message" name="message" placeholder="Let us know if you have any special requests or areas of focus..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Request Appointment</button>
+            </form>
+        </section>
+
         <section class="contact-details">
             <div class="contact-content">
                 <div class="contact-info">
+                    <!-- Business status will be dynamically inserted here by JavaScript -->
+                    
                     <h3>Location</h3>
                     <p>123 Wellness Way<br>
                     Houston, TX 77001</p>
@@ -46,8 +108,8 @@
                     <p><strong>Phone:</strong> (713) 555-BEST<br>
                     <strong>Email:</strong> relax@dbestmassage.com</p>
 
-                    <h3>Book Your Appointment</h3>
-                    <p>Call us or email to schedule your session. Walk-ins welcome based on availability, but appointments are recommended to ensure you get D Best time slot for your needs.</p>
+                    <h3>Walk-Ins Welcome</h3>
+                    <p>Walk-ins welcome based on availability, but appointments are recommended to ensure you get D Best time slot for your needs.</p>
 
                     <h3>First Time Clients</h3>
                     <p>New to DBest? Mention this website when booking and receive 15% off your first service. Because experiencing D Best should be accessible to everyone.</p>
@@ -62,12 +124,17 @@
         <section class="callout">
             <h3>Experience the DBest Difference</h3>
             <p>At DBest Massage Service, we believe everyone deserves access to exceptional therapeutic care. Our team of certified massage therapists is dedicated to providing you with personalized treatments that address your unique wellness goals.</p>
-            <p>Don't settle for average. Choose DBest – because you deserve D Best.</p>
+            <p>Don't settle for average. Choose DBest — because you deserve D Best.</p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 DBest Massage Service - Experience D Best in Wellness | Houston, Texas</p>
     </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/gallery.js"></script>
 </body>
 </html>
